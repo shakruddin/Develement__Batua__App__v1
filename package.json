@@ -1,0 +1,17 @@
+{
+  "name": "batua",
+  "version": "1.0.0",
+  "description": "\"this web for only development project\"",
+  "main": "less-watch-compiler.config.json",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "I",
+    "love",
+    "less",
+    "css"
+  ],
+  "author": "AslamDesusa Shakru",
+  "license": "ISC"
+}
