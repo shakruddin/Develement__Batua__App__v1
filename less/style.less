@@ -207,6 +207,9 @@ header{
             @media @mobile{
                 width: fit-content;
             }
+            .user-profile-item{
+                cursor: pointer;
+            }
             .user-profile-name{
                 @media @tablet {
                     display: none;
@@ -216,6 +219,7 @@ header{
                 }
             }
             .user-profile-d-item{
+                cursor: pointer;
                 @media @mobile{
                     display: none;
                 }
@@ -404,7 +408,7 @@ header{
     }
 }
 
-#signup{
+.bd-example-modal-lg{
     .modal-content{
         margin-top: 12%;
         .modal-header{
@@ -657,6 +661,7 @@ section{
         padding: 5px; 
         box-shadow: 0px 0px 10px #000;
         outline: none !important;
+        cursor: pointer;
         &:active{
             opacity: 0.5;
         }

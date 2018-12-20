@@ -167,6 +167,9 @@ header .user-container .user-profile {
     width: fit-content;
   }
 }
+header .user-container .user-profile .user-profile-item {
+  cursor: pointer;
+}
 @media only screen and (min-width: 520px) and (max-width: 700px) {
   header .user-container .user-profile .user-profile-name {
     display: none;
@@ -176,6 +179,9 @@ header .user-container .user-profile {
   header .user-container .user-profile .user-profile-name {
     display: none;
   }
+}
+header .user-container .user-profile .user-profile-d-item {
+  cursor: pointer;
 }
 @media only screen and (min-width: 250px) and (max-width: 520px) {
   header .user-container .user-profile .user-profile-d-item {
@@ -362,10 +368,10 @@ header .user-container .user-login .login-f-g .btn-google div {
     height: 160px;
   }
 }
-#signup .modal-content {
+.bd-example-modal-lg .modal-content {
   margin-top: 12%;
 }
-#signup .modal-content .modal-header {
+.bd-example-modal-lg .modal-content .modal-header {
   background: #6c52a1;
   padding: 2rem;
   text-align: center;
@@ -374,10 +380,10 @@ header .user-container .user-login .login-f-g .btn-google div {
   align-items: unset;
   border-radius: 0px;
 }
-#signup .modal-content .modal-header h5 {
+.bd-example-modal-lg .modal-content .modal-header h5 {
   color: #fff;
 }
-#signup .modal-content .modal-header button {
+.bd-example-modal-lg .modal-content .modal-header button {
   float: right;
   position: absolute;
   top: 0px;
@@ -386,11 +392,11 @@ header .user-container .user-login .login-f-g .btn-google div {
   color: #fff;
   outline: none;
 }
-#signup .modal-content form {
+.bd-example-modal-lg .modal-content form {
   width: 100%;
   padding: 40px 40px 15px 40px;
 }
-#signup .modal-content form button {
+.bd-example-modal-lg .modal-content form button {
   padding: 7px 10px;
   width: 100px;
   background: #6c52a1;
@@ -402,12 +408,12 @@ header .user-container .user-login .login-f-g .btn-google div {
   outline: none;
   cursor: pointer;
 }
-#signup .modal-content fieldset {
+.bd-example-modal-lg .modal-content fieldset {
   position: relative;
   border: none;
   margin-bottom: 8%;
 }
-#signup .modal-content label {
+.bd-example-modal-lg .modal-content label {
   position: absolute;
   top: 15px;
   left: 10px;
@@ -416,7 +422,7 @@ header .user-container .user-login .login-f-g .btn-google div {
   transition: all 0.3s ease;
   font-weight: lighter;
 }
-#signup .modal-content input {
+.bd-example-modal-lg .modal-content input {
   background: unset;
   color: #000;
   font-size: 20px;
@@ -424,32 +430,32 @@ header .user-container .user-login .login-f-g .btn-google div {
   border: none;
   margin-top: 15px;
 }
-#signup .modal-content input:focus {
+.bd-example-modal-lg .modal-content input:focus {
   outline: none;
 }
-#signup .modal-content input:focus ~ label {
+.bd-example-modal-lg .modal-content input:focus ~ label {
   color: #03a9f4;
   top: 0;
   transform: scale(0.6, 0.6);
 }
-#signup .modal-content input:focus ~ .after {
+.bd-example-modal-lg .modal-content input:focus ~ .after {
   background-position: 0 0;
 }
-#signup .modal-content input:valid ~ label {
+.bd-example-modal-lg .modal-content input:valid ~ label {
   top: 0;
   transform: scale(0.6, 0.6);
 }
 @media only screen and (min-width: 520px) and (max-width: 700px) {
-  #signup .modal-content input {
+  .bd-example-modal-lg .modal-content input {
     display: block;
   }
 }
 @media only screen and (min-width: 250px) and (max-width: 520px) {
-  #signup .modal-content input {
+  .bd-example-modal-lg .modal-content input {
     display: block;
   }
 }
-#signup .modal-content .after {
+.bd-example-modal-lg .modal-content .after {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, #03a9f4 50%, transparent 50%);
@@ -458,7 +464,7 @@ header .user-container .user-login .login-f-g .btn-google div {
   background-position: 100% 0;
   transition: all 0.6s ease;
 }
-#signup .modal-content p {
+.bd-example-modal-lg .modal-content p {
   display: flex;
   justify-content: center;
 }
@@ -590,6 +596,7 @@ section {
   padding: 5px;
   box-shadow: 0px 0px 10px #000;
   outline: none !important;
+  cursor: pointer;
 }
 .section3 button:active {
   opacity: 0.5;
