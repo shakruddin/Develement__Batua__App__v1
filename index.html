@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../bs/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bs/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 
   
-    <title>Document</title>
+    <title>Batua</title>
 </head>
 <body>
 
@@ -20,7 +20,7 @@
             <div class="container">
                 <div>
                     
-                    <img src="../Batua__Images/brand_logo.png" alt="brand_logo">
+                    <img src="Batua__Images/brand_logo.png" alt="brand_logo">
                     
                     <div class="search-bar">
                         <div class="input-group">
@@ -34,7 +34,7 @@
                         <div class="user-container">
                             <div class="user-profile" id="user-proflie">
                                 <div class="user-profile-item">
-                                    <img src="../Batua__Images/Profile_icon.png" alt="">
+                                    <img src="Batua__Images/Profile_icon.png" alt="">
                                 </div>
                                 <div class="user-profile-name">You</div>
                                 <div class="user-profile-d-item">
@@ -45,13 +45,13 @@
                                 <h5 class="text-center font-weight-bold">Login to view your offers!</h5>
                                 <form action="#" autocomplete="off">
                                     <fieldset>
-                                      <input id="first" type="text" name="first" required>
-                                      <label for="first">First Name</label>
+                                      <input id="first" type="Email" name="Email" required>
+                                      <label for="first">Email</label>
                                       <div class="after"></div>
                                     </fieldset>
                                     <fieldset>
-                                      <input id="last" type="text" name="last" required>
-                                      <label for="last">Last Name</label>
+                                      <input id="last" type="password" name="password" required>
+                                      <label for="last">Password</label>
                                       <div class="after"></div>
                                     </fieldset>
                                     <p>
@@ -82,14 +82,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">CATEGORIES</a>
+                    <li class="nav-item">
+                        <a class="nav-link one" href="#one">CATEGORIES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">PAYMENT OPTION</a>
+                        <a class="nav-link two" href="#two">PAYMENT OPTION</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">TOP STORES</a>
+                        <a class="nav-link three" href="#three">TOP STORES</a>
                     </li>    
                     </ul>
                 </div>  
@@ -101,7 +101,7 @@
     <!-- slider bar -->
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <div class="top-s-d">You are missing out on exclusive offers, rewards and cashbacks on your credit/debit cards and wallets! <a href="#"> Sign up </a></div>
+        <div class="top-s-d">You are missing out on exclusive offers, rewards and cashbacks on your credit/debit cards and wallets! <a href="#" data-toggle="modal" data-target="#signup"> Sign up </a></div>
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -109,13 +109,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="../Batua__Images/silder-image/silder1.jpg" alt="First slide">
+            <img class="d-block w-100" src="Batua__Images/silder-image/silder1.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../Batua__Images/silder-image/silder1.jpg" alt="Second slide">
+            <img class="d-block w-100" src="Batua__Images/silder-image/silder1.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="../Batua__Images/silder-image/silder1.jpg" alt="Third slide">
+            <img class="d-block w-100" src="Batua__Images/silder-image/silder1.jpg" alt="Third slide">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -130,6 +130,49 @@
 
     <!-- slider end -->
 
+    <!-- Sign up -->
+      
+      <!-- Modal box -->
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Sign up with Batua!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form action="#" autocomplete="off">
+                    <fieldset>
+                        <input id="first" type="email" name="email" required>
+                        <label for="first">Email</label>
+                        <div class="after"></div>
+                    </fieldset>
+                    <fieldset>
+                        <input id="last" type="password" name="password" required>
+                        <label for="last">Password</label>
+                        <div class="after"></div>
+                    </fieldset>
+                    <fieldset>
+                        <input id="last" type="password" name="ConfirmPassword" required>
+                        <label for="last">Confirm Password</label>
+                        <div class="after"></div>
+                    </fieldset>
+                    <p>
+                        <button>SIGN UP</button>
+                    </p>
+                    <br>
+                    <p>
+                        Already have an account?<span class="main-color bold">Sign In </span>
+                    </p>
+                </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- end -->
 
     <!-- middle boby batua -->
 
@@ -140,7 +183,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="child-section">  
-                        <img src="../Batua__Images/1.1ManageCards.png" alt="1.1ManageCards">
+                        <img src="Batua__Images/1.1ManageCards.png" alt="1.1ManageCards">
                         <h4>
                             MANAGE CARDS
                         </h4>
@@ -153,7 +196,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="child-section">  
-                        <img src="../Batua__Images/1.2ViewOffers.png" alt="1.2ViewOffers">
+                        <img src="Batua__Images/1.2ViewOffers.png" alt="1.2ViewOffers">
                         <h4>
                             VIEW OFFERS
                         </h4>
@@ -166,7 +209,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="child-section">  
-                        <img src="../Batua__Images/1.3EnjoyBenefits.png" alt="1.3EnjoyBenefits">
+                        <img src="Batua__Images/1.3EnjoyBenefits.png" alt="1.3EnjoyBenefits">
                         <h4>
                             MANAGE CARDS
                         </h4>
@@ -253,47 +296,47 @@
 
     <!-- CATEGORIES -->
 
-        <section class="section4">
+        <section id="one" class="section4">
 
             <h4>CATEGORIES</h4>
             <p>Browse all offers and benefits! Clean up the mess by <span class="main-color bold">Signing up</span> to view offers available to you</p>
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/1.Flights.png" alt="1.Flights">
+                        <img src="Batua__Images/Categories Logos Web/1.Flights.png" alt="1.Flights">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/2.Hotels.png" alt="2.Hotels">
+                        <img src="Batua__Images/Categories Logos Web/2.Hotels.png" alt="2.Hotels">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/3.Travel.png" alt="2.Hotels">
+                        <img src="Batua__Images/Categories Logos Web/3.Travel.png" alt="2.Hotels">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/4.Mobiles.png" alt="2.Hotels">
+                        <img src="Batua__Images/Categories Logos Web/4.Mobiles.png" alt="2.Hotels">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/5.Recharge _ Bill Payments.png" alt="5.Recharge_Bill_Payments">
+                        <img src="Batua__Images/Categories Logos Web/5.Recharge _ Bill Payments.png" alt="5.Recharge_Bill_Payments">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/6.Computer _ Electronics.png" alt="6.Computer">
+                        <img src="Batua__Images/Categories Logos Web/6.Computer _ Electronics.png" alt="6.Computer">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/7.Dinning _ Groceries.png" alt="7.Dinning">
+                        <img src="Batua__Images/Categories Logos Web/7.Dinning _ Groceries.png" alt="7.Dinning">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/8.Fashion.png" alt="8.Fashion">
+                        <img src="Batua__Images/Categories Logos Web/8.Fashion.png" alt="8.Fashion">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/9.Movies _ Entertainment.png" alt="9.Movies">
+                        <img src="Batua__Images/Categories Logos Web/9.Movies _ Entertainment.png" alt="9.Movies">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/10.Furnishing _ Appliances.png" alt="Furnishing">
+                        <img src="Batua__Images/Categories Logos Web/10.Furnishing _ Appliances.png" alt="Furnishing">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/11.Beauty _ Health.png" alt="Beauty">
+                        <img src="Batua__Images/Categories Logos Web/11.Beauty _ Health.png" alt="Beauty">
                     </div>
                     <div class="col-md-2 col-6">
-                        <img src="../Batua__Images/Categories Logos Web/12.Misc.png" alt="Misc">
+                        <img src="Batua__Images/Categories Logos Web/12.Misc.png" alt="Misc">
                     </div>
                 </div>
             </div>
@@ -304,7 +347,7 @@
 
     <!-- PAYMENT OPTIONS -->
 
-    <section class="section5">
+    <section id="two" class="section5">
 
         <h4>PAYMENT OPTIONS</h4>
         <p>Browse offers and benefits on different payment options!</p>
@@ -312,17 +355,17 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="payment-card">
-                        <img src="../Batua__Images/3.1CreditCards.png" alt="3.1CreditCards">
+                        <img src="Batua__Images/3.1CreditCards.png" alt="3.1CreditCards">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="payment-card">
-                        <img src="../Batua__Images/3.2DeditCards.png" alt="3.2DeditCards">
+                        <img src="Batua__Images/3.2DeditCards.png" alt="3.2DeditCards">
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="payment-card">
-                        <img src="../Batua__Images/3.3DigitalWallets.png" alt="3.3DigitalWallets">
+                        <img src="Batua__Images/3.3DigitalWallets.png" alt="3.3DigitalWallets">
                     </div>
                 </div>
             </div>
@@ -332,69 +375,71 @@
 
     <!-- PAYMENT OPTIONS end -->
 
-    <section class="section6">
+    <!-- TOP STORES -->
+
+    <section id="three" class="section6">
         <h4>TOP STORES</h4>
         <p>Browse trending offers on popular stores! </p>
         <div class="container">
             <div class="row">
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Makemytrip.png" alt="Makemytrip">
+                        <img src="Batua__Images/Merchant Logos Web/Makemytrip.png" alt="Makemytrip">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/amazon.png" alt="amazon">
+                        <img src="Batua__Images/Merchant Logos Web/amazon.png" alt="amazon">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Flipkart.png" alt="Flipkart">
+                        <img src="Batua__Images/Merchant Logos Web/Flipkart.png" alt="Flipkart">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Goibibo.png" alt="Goibibo">
+                        <img src="Batua__Images/Merchant Logos Web/Goibibo.png" alt="Goibibo">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Bookmyshow.png" alt="Bookmyshow">
+                        <img src="Batua__Images/Merchant Logos Web/Bookmyshow.png" alt="Bookmyshow">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Zomato.png" alt="Zomato">
+                        <img src="Batua__Images/Merchant Logos Web/Zomato.png" alt="Zomato">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Cleartrip.png" alt="Cleartrip">
+                        <img src="Batua__Images/Merchant Logos Web/Cleartrip.png" alt="Cleartrip">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Bigbasket.png" alt="Bigbasket">
+                        <img src="Batua__Images/Merchant Logos Web/Bigbasket.png" alt="Bigbasket">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Swiggy.png" alt="Swiggy">
+                        <img src="Batua__Images/Merchant Logos Web/Swiggy.png" alt="Swiggy">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Paytm.png" alt="Paytm">
+                        <img src="Batua__Images/Merchant Logos Web/Paytm.png" alt="Paytm">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Uber.png" alt="Uber">
+                        <img src="Batua__Images/Merchant Logos Web/Uber.png" alt="Uber">
                     </div>
                 </div>
                 <div class="col-md-2  col-6">
                     <div class="merchant-logo">
-                        <img src="../Batua__Images/Merchant Logos Web/Airbnb.png" alt="Airbnb">
+                        <img src="Batua__Images/Merchant Logos Web/Airbnb.png" alt="Airbnb">
                     </div>
                 </div>
             </div>
@@ -402,19 +447,68 @@
         <button>VIEW ALL STORES</button>
     </section>
 
-    <!-- TOP STORES -->
-
-
 
     <!-- TOP STORES end -->
 
+
+    <!-- footer bar -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h4>HELP</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group"><a href="#">FAQ</a></li>
+                        <li class="list-group"><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>PARTNERSHIPS</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group"><a href="#">Stores</a></li>
+                        <li class="list-group"><a href="#">Banks</a></li>
+                        <li class="list-group"><a href="#">List your Store</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>BATUA</h4>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group"><a href="#">About</a></li>
+                        <li class="list-group"><a href="#">Team</a></li>
+                        <li class="list-group"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center">FOLLOW US</h4>
+                    <div class="brand-icons">
+                        <div class="twitter-logo">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <div class="facebook-logo">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <div class="google-logo">
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                        <div class="instagram-logo">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer bar end -->
+
     <!-- bootstrap source -->
-    <script src="../bs/js/jquery.min.js"></script>
-    <script src="../bs/js/popper.min.js"></script>
-    <script src="../bs/js/bootstrap.min.js"></script>
+    <script src="bs/js/jquery.min.js"></script>
+    <script src="bs/js/popper.min.js"></script>
+    <script src="bs/js/bootstrap.min.js"></script>
     <!-- end -->
     <!-- header js -->
-    <script src="../js/header.js"></script>
+    <script src="js/header.js"></script>
     <!-- end -->
 </body>
 </html>
